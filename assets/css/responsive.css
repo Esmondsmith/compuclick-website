@@ -98,6 +98,9 @@
     .slider-carousel .owl-dots {
         bottom: 75px;
     }
+    .what-we-do .what-left h3{
+        display: none;
+    }
     .about-img img {
         max-width: 500px;
         margin: 0 auto 30px;
@@ -105,10 +108,12 @@
     .about-content {
         text-align: center;
     }
-    .about-btn {
-        margin: 50px 0 0;
+    .about-us-btn {
+        margin: 20px 0 0;
+        border-radius: 0px;
         text-align: center;
     }
+    
     #services {
         padding: 70px 0 45px;
     }
@@ -122,20 +127,19 @@
     .why-choose-single-details {
         width: 86%;
     }
-    .why-choose-img img,
-    .app-downlod-img img {
-        max-width: 500px;
-        margin: 0 auto;
+    .why-choose-img img{
+        height: 400px;
+        width: 100%;
+        border-radius: 8px;
     }
-    .app-download-content {
-        text-align: center;
+    div.rotate_right {
+        float: left;
+        transform: rotate(0deg);
     }
-    /* .screenshots-slider .owl-nav .owl-next {
-        right: -20px;
+    div.rotate_left {
+        float: left;
+        transform: rotate(0deg);
     }
-    .screenshots-slider .owl-nav > div {
-        left: -20px;
-    } */
     #team {
         padding: 70px 0 60px;
     }
@@ -252,6 +256,9 @@
     .slider-carousel .owl-dots {
         bottom: 45px;
     }
+    .what-we-do .what-left h3{
+        display: none;
+    }
     #about {
         padding: 50px 0 75px;
     }
@@ -262,8 +269,9 @@
     .about-content {
         text-align: center;
     }
-    .about-btn {
-        margin: 50px 0 0;
+    .about-us-btn {
+        margin: 20px 0 0;
+        border-radius: 0px;
         text-align: center;
     }
     .section-heading {
@@ -293,33 +301,31 @@
     .why-choose-single-details {
         width: 82%;
     }
-    .why-choose-img img,
-    .app-downlod-img img {
-        max-width: 350px;
-        margin: 0 auto;
+    .why-choose-img img{
+        height: 400px;
+        width: 100%;
+        border-radius: 8px;
     }
-    .app-download-content {
+    .polaroid {
         text-align: center;
+        width: 100%;
     }
-
-    /* .screenshots-slider .owl-nav .owl-next {
-        right: -12px;
-        padding: 6px 12px
+    div.rotate_right {
+        float: left;
+        transform: rotate(0deg);
+        margin-bottom: 20px;
     }
-    .screenshots-slider .owl-nav > div {
-        position: absolute;
-        left: -12px;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-        padding: 6px 10px;
-    } */
-    #demo-video {
+    div.rotate_left {
+        float: left;
+        transform: rotate(0deg);
+    }
+    #popular-products{
         padding: 60px 0 90px;
     }
 
     #counter {
         padding: 80px 0 20px;
+        margin: 0%;
     }
     .counter-item {
         margin: 0 0 50px;
@@ -359,12 +365,6 @@
     #accordion {
         padding: 0;
     }
-    #app-download {
-        padding: 70px 0;
-    }
-    .app-download-content {
-        padding: 20px 0 0;
-    }
     #newsletter {
         padding: 60px 0 80px;
     }
@@ -377,9 +377,6 @@
     }
     .subscribe-form span button {
         right: 30px;
-    }
-    #latest-blog {
-        padding: 50px 0;
     }
     .contact-form {
         margin: 0 0 50px;
@@ -399,6 +396,15 @@
     .footer-social {
         text-align: center;
         margin: 15px 0 20px;
+    }
+    .footer-social li a {
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 3px 6px;
+        font-size: 16px;
+        display: block;
+        border-radius: 6px;
+        margin: 0 2px;
     }
     .copyright-text {
         text-align: center;
@@ -502,6 +508,9 @@
     .slider-carousel .owl-dots {
         bottom: 40px;
     }
+    .what-we-do .what-left h3{
+        display: none;
+    }
     #about {
         padding: 40px 0 65px;
     }
@@ -511,9 +520,9 @@
     }
     .about-content {
         text-align: center;
-    }
-    .about-btn {
-        margin: 50px 0 0;
+    }.about-us-btn {
+        margin: 20px 0 0;
+        border-radius: 0px;
         text-align: center;
     }
     .section-heading {
@@ -543,33 +552,31 @@
     .why-choose-single-details {
         width: 76%;
     }
-    .why-choose-img img,
-    .app-downlod-img img {
-        max-width: 300px;
-        margin: 0 auto;
+    .why-choose-img img{
+        height: 400px;
+        width: 100%;
+        border-radius: 8px;
     }
-    .app-download-content {
+    .polaroid {
         text-align: center;
+        width: 100%;
     }
-
-    /* .screenshots-slider .owl-nav .owl-next {
-        right: -12px;
-        padding: 6px 12px
+    div.rotate_right {
+        float: left;
+        transform: rotate(0deg);
+        margin-bottom: 20px;
     }
-    .screenshots-slider .owl-nav > div {
-        position: absolute;
-        left: -12px;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-        padding: 6px 10px;
-    } */
-    #demo-video {
+    div.rotate_left {
+        float: left;
+        transform: rotate(0deg);
+    }
+    #popular-products{
         padding: 50px 0 80px;
     }
 
     #counter {
         padding: 70px 0 10px;
+        margin: 0%;
     }
     .counter-item {
         margin: 0 0 50px;
@@ -614,12 +621,6 @@
     #accordion {
         padding: 0;
     }
-    #app-download {
-        padding: 60px 0;
-    }
-    .app-download-content {
-        padding: 20px 0 0;
-    }
     #newsletter {
         padding: 50px 0 70px;
     }
@@ -636,9 +637,6 @@
     .subscribe-form span button {
         right: 10px;
         height: 40px;
-    }
-    #latest-blog {
-        padding: 40px 0;
     }
     .contact-form {
         margin: 0 0 50px;
@@ -661,6 +659,15 @@
     .footer-social {
         text-align: center;
         margin: 15px 0 20px;
+    }
+    .footer-social li a {
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 3px 6px;
+        font-size: 16px;
+        display: block;
+        border-radius: 6px;
+        margin: 0 2px;
     }
     .copyright-text {
         text-align: center;
@@ -761,6 +768,9 @@
     .slider-carousel .owl-dots {
         bottom: 40px;
     }
+    .what-we-do .what-left h3{
+        display: none;
+    }
     #about {
         padding: 40px 0 65px;
     }
@@ -771,8 +781,9 @@
     .about-content {
         text-align: center;
     }
-    .about-btn {
-        margin: 35px 0 0;
+    .about-us-btn {
+        margin: 20px 0 0;
+        border-radius: 0px;
         text-align: center;
     }
     .section-heading {
@@ -802,32 +813,30 @@
     .why-choose-single-details {
         width: 72%;
     }
-    .why-choose-img img,
-    .app-downlod-img img {
-        max-width: 300px;
-        margin: 0 auto;
+    .why-choose-img img{
+        height: 400px;
+        width: 100%;
+        border-radius: 8px;
     }
-    .app-download-content {
+    .polaroid {
         text-align: center;
+        width: 100%;
     }
-/* 
-    .screenshots-slider .owl-nav .owl-next {
-        right: -12px;
-        padding: 6px 12px
+    div.rotate_right {
+        float: left;
+        transform: rotate(0deg);
+        margin-bottom: 20px;
     }
-    .screenshots-slider .owl-nav > div {
-        position: absolute;
-        left: -12px;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-        padding: 6px 10px;
-    } */
-    #demo-video {
+    div.rotate_left {
+        float: left;
+        transform: rotate(0deg);
+    }
+    #popular-products{
         padding: 50px 0 80px;
     }
     #counter {
         padding: 70px 0 10px;
+        margin: 0%;
     }
     .counter-item {
         margin: 0 0 50px;
@@ -872,12 +881,6 @@
     #accordion {
         padding: 0;
     }
-    #app-download {
-        padding: 60px 0;
-    }
-    .app-download-content {
-        padding: 20px 0 0;
-    }
     #newsletter {
         padding: 50px 0 70px;
     }
@@ -894,9 +897,6 @@
     .subscribe-form span button {
         right: 10px;
         height: 40px;
-    }
-    #latest-blog {
-        padding: 40px 0;
     }
     .contact-form {
         margin: 0 0 50px;
@@ -919,6 +919,15 @@
     .footer-social {
         text-align: center;
         margin: 15px 0 20px;
+    }
+    .footer-social li a {
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 3px 6px;
+        font-size: 16px;
+        display: block;
+        border-radius: 6px;
+        margin: 0 2px;
     }
     .copyright-text {
         text-align: center;
