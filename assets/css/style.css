@@ -16,13 +16,12 @@ Header
 Banner
 Section Heading
 About
-Features
+services
 Why Choose Us
 App Screenshots
 Demo Video
 How It Work
 Counter
-Pricing
 Faq
 Testimonial
 Download
@@ -193,13 +192,12 @@ blockquote {
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset;
     border-radius: 2px
 }
-
-.gradient-bg {
-    background: rgba(52, 131, 255, 1);
-    background: linear-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
-    background: -webkit-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
+.main-gradient-text {
+    background-image: linear-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
 }
-.new-gradient{
+.main-gradient{
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-size: 100% auto;
@@ -576,6 +574,10 @@ nav.navbar.bootsnav {
 .about-content h3 {
     margin: 0 0 20px;
 }
+.about-content span{
+    font-weight: 800;
+    color: #000;
+}
 
 .about-us-btn {
     margin: 20px 0 0;
@@ -593,20 +595,27 @@ nav.navbar.bootsnav {
     Features
 ---------------------------------------------------------------------------------*/
 
-#features {
-    padding: 70px 0 85px
+#services {
+    padding: 70px 0 85px;
+    /* hr{
+        border-bottom: 2px solid rgb(216, 15, 28);
+        margin: 0;
+        width: 20%;
+    } */
 }
-
-.feature-single i {
+.service-icon-div{
+    transition: background 0.7s, transform 0.7s;
+}
+.service-icon-div i {
     font-size: 30px;
     border-radius: 20px 0;
     padding: 20px;
     display: inline-block;
-    margin: 0 0 15px
+    margin: 0 0 10px
 }
-
-.feature-single:hover i {
-    background-position: right center;
+.service-icon-div:hover i {
+    cursor: pointer;
+    transform: translateY(-8px);
 }
 
 /*-------------------------------------------------------------------------------
@@ -620,22 +629,20 @@ nav.navbar.bootsnav {
 .why-choose-content h2 {
     margin: 0 0 30px;
 }
-
 .why-chose-icon {
     width: 15%;
 }
 
 .why-chose-icon i {
     font-size: 30px;
-    padding: 20px;
-    border-radius: 25px 0;
+    padding: 12px;
+    border-radius: 6px;
     display: inline-block;
-    background: rgba(52, 131, 255, 1);
-    background: linear-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
-    background: -webkit-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
+    background: #ff004f;
+    background: #ff004f;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border: 2px solid #8744EA
+    border: 2px solid #ff004f;
 }
 
 .why-choose-single {
@@ -649,82 +656,26 @@ nav.navbar.bootsnav {
 .why-choose-single-details h5 {
     margin: -6px 0 6px;
 }
+.why-choose-img img{
+    height: 600px;
+    width: 500px;
+    border-radius: 8px;
+}
+
 
 /*-------------------------------------------------------------------------------
-    App Screenshots
----------------------------------------------------------------------------------*/
-
-#app-screenshot {
-    padding: 70px 0 140px
-}
-
-.screenshots-slider img {
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0 6px #e6f0fa;
-    box-shadow: 0 0 6px #e6f0fa;
-    border: 1px solid #e6f0fa;
-}
-
-.screenshots-slider .owl-nav > div {
-    position: absolute;
-    left: -26px;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    background: rgba(52, 131, 255, 1);
-    background: linear-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
-    background: -webkit-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: #fff;
-    border-radius: 50%;
-    padding: 8px 12px
-}
-
-.screenshots-slider .owl-nav .owl-next {
-    left: auto;
-    right: -26px;
-    padding: 8px 16px
-}
-
-.screenshots-slider .owl-dots {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -50px;
-    text-align: center;
-}
-
-.screenshots-slider .owl-dots .owl-dot {
-    width: 14px;
-    height: 14px;
-    border-radius: 100%;
-    border: 2px solid #cd0fd8;
-    margin: 0 4px;
-    display: inline-block;
-}
-
-.screenshots-slider .owl-dots .owl-dot.active {
-    background: rgba(52, 131, 255, 1);
-    background: linear-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
-    background: -webkit-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
-    border: 0
-}
-
-/*-------------------------------------------------------------------------------
-    Demo Video
+Video section styling
 ---------------------------------------------------------------------------------*/
 
 #demo-video {
-    background-image: url(../images/banner-1.jpg);
+    background-image: url(../images/slider-img.png);
     background-attachment: fixed;
     padding: 80px 0 110px
 }
 
 .video-popup-icon a {
     font-size: 50px;
-    color: #cd0fd8;
+    color: #ff004f;
     border-radius: 50%;
     display: inline-block;
     background-color: #fff;
@@ -737,7 +688,7 @@ nav.navbar.bootsnav {
 
 .video-popup-icon a:hover {
     color: #fff;
-    background: #cd0fd8
+    background: linear-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 254, 254) 100%);
 }
 
 .video-popup-icon {
@@ -926,57 +877,29 @@ nav.navbar.bootsnav {
     }
 }
 
+
 /*-------------------------------------------------------------------------------
-    How It Work
+    New div for slanty pc
 ---------------------------------------------------------------------------------*/
 
-#how-work {
-    padding: 70px 0
-}
+div.polaroid {
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+  }
+  
+  div.rotate_right {
+    float: left;
+    transform: rotate(7deg);
+  }
+  
+  div.rotate_left {
+    float: left;
+    transform: rotate(-18deg);
+  }
 
-.how-work-single span {
-    padding: 15px 20px;
-    display: block;
-    margin: 0 0 80px;
-}
-
-.how-work-single:hover span {
-    background-position: right center
-}
-
-.arrow-line {
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: 2;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-
-}
-
-.arrow-line .round-circle {
-    height: 32px;
-    border: 2px solid #6E19F2;
-    width: 1px;
-    height: 110px;
-    margin: 0 auto
-}
-
-.arrow-line .round-circle::after {
-    background: #cd0fd8;
-    border: 3px solid #dfeafd;
-    border-radius: 50%;
-    bottom: -13px;
-    content: "";
-    height: 16px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    position: absolute;
-    width: 16px;
-    z-index: -1;
-}
 
 /*-------------------------------------------------------------------------------
     Counter
@@ -998,80 +921,6 @@ nav.navbar.bootsnav {
 
 .counter-item h4 {
     margin: 5px 0 0;
-}
-
-/*-------------------------------------------------------------------------------
-    Pricing
----------------------------------------------------------------------------------*/
-
-#pricing {
-    padding: 70px 0 100px
-}
-
-.pricing-table-single {
-    -webkit-box-shadow: 0 0 6px #e6f0fa;
-    box-shadow: 0 0 6px #e6f0fa;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding: 10px 0 40px;
-    border: 1px solid #e6f0fa;
-    border-radius: 10px;
-}
-
-.pricing-table-single:hover {
-    -webkit-box-shadow: 0 0 20px #e6f0fa;
-    box-shadow: 0 0 20px #e6f0fa;
-}
-
-.price-amount {
-    background-color: #f5f5f5;
-    padding: 20px 0;
-    margin: 20px 0;
-}
-
-.price-amount h2 {
-    font-size: 50px;
-    margin: 15px 0;
-}
-
-.price-amount h2 sub {
-    font-size: 16px;
-    color: #2c3e50
-}
-
-.price-amount h2 span {
-    font-size: 24px;
-}
-
-.price-amount h2 sup {
-    font-size: 24px;
-}
-
-.pricing-details ul li {
-    display: block;
-    padding: 6px 0;
-    color: #34495e
-}
-
-.pricing-details ul li.no {
-    text-decoration: line-through;
-    -webkit-text-decoration-color: #c10f41;
-    text-decoration-color: #c10f41;
-}
-
-.pricing-btn a {
-    border-radius: 10px 0;
-    padding: 12px 30px;
-    display: inline-block;
-    margin: 20px 0 0;
-    border: 2px solid #cd0fd8;
-    color: #cd0fd8
-}
-
-.pricing-btn a:hover {
-    background-color: #cd0fd8;
-    border-color: #cd0fd8;
-    color: #fff
 }
 
 /*-------------------------------------------------------------------------------

@@ -109,12 +109,10 @@
         margin: 50px 0 0;
         text-align: center;
     }
-    #features {
+    #services {
         padding: 70px 0 45px;
     }
-    .feature-single,
-    .how-work-single,
-    .pricing-table-single,
+    .service-icon-div,
     .team-single {
         margin: 0 0 40px;
     }
@@ -132,16 +130,12 @@
     .app-download-content {
         text-align: center;
     }
-    .screenshots-slider .owl-nav .owl-next {
+    /* .screenshots-slider .owl-nav .owl-next {
         right: -20px;
     }
     .screenshots-slider .owl-nav > div {
         left: -20px;
-    }
-    #how-work {
-        padding: 70px 0 30px;
-    }
-    #pricing,
+    } */
     #team {
         padding: 70px 0 60px;
     }
@@ -279,7 +273,7 @@
         padding: 6px 30px;
         font-size: 14px;
     }
-    #features {
+    #services {
         padding: 50px 0 25px;
     }
     #why-choose {
@@ -289,9 +283,7 @@
         font-size: 24px;
         padding: 18px;
     }
-    .feature-single,
-    .how-work-single,
-    .pricing-table-single,
+    .service-icon-div,
     .team-single {
         margin: 0 0 40px;
     }
@@ -309,10 +301,8 @@
     .app-download-content {
         text-align: center;
     }
-    #app-screenshot {
-        padding: 50px 0 120px;
-    }
-    .screenshots-slider .owl-nav .owl-next {
+
+    /* .screenshots-slider .owl-nav .owl-next {
         right: -12px;
         padding: 6px 12px
     }
@@ -323,17 +313,11 @@
         height: 40px;
         font-size: 20px;
         padding: 6px 10px;
-    }
+    } */
     #demo-video {
         padding: 60px 0 90px;
     }
-    #how-work {
-        padding: 50px 0 0;
-    }
-    .how-work-image img {
-        max-width: 300px;
-        margin: 0 auto;
-    }
+
     #counter {
         padding: 80px 0 20px;
     }
@@ -352,7 +336,6 @@
         margin: 0;
         font-size: 16px;
     }
-    #pricing,
     #team {
         padding: 50px 0 40px;
     }
@@ -540,7 +523,7 @@
         padding: 6px 15px;
         font-size: 14px;
     }
-    #features {
+    #services {
         padding: 40px 0 15px;
     }
     #why-choose {
@@ -550,9 +533,7 @@
         font-size: 24px;
         padding: 18px;
     }
-    .feature-single,
-    .how-work-single,
-    .pricing-table-single,
+    .service-icon-div,
     .team-single {
         margin: 0 0 40px;
     }
@@ -570,10 +551,8 @@
     .app-download-content {
         text-align: center;
     }
-    #app-screenshot {
-        padding: 40px 0 110px;
-    }
-    .screenshots-slider .owl-nav .owl-next {
+
+    /* .screenshots-slider .owl-nav .owl-next {
         right: -12px;
         padding: 6px 12px
     }
@@ -584,17 +563,11 @@
         height: 40px;
         font-size: 20px;
         padding: 6px 10px;
-    }
+    } */
     #demo-video {
         padding: 50px 0 80px;
     }
-    #how-work {
-        padding: 40px 0 0;
-    }
-    .how-work-image img {
-        max-width: 250px;
-        margin: 0 auto;
-    }
+
     #counter {
         padding: 70px 0 10px;
     }
@@ -613,7 +586,6 @@
         margin: 0;
         font-size: 16px;
     }
-    #pricing,
     #team {
         padding: 40px 0 30px;
     }
@@ -810,7 +782,7 @@
         padding: 6px 12px;
         font-size: 12px;
     }
-    #features {
+    #services {
         padding: 40px 0 15px;
     }
     #why-choose {
@@ -820,9 +792,7 @@
         font-size: 24px;
         padding: 18px;
     }
-    .feature-single,
-    .how-work-single,
-    .pricing-table-single,
+    .service-icon-div,
     .team-single {
         margin: 0 0 40px;
     }
@@ -840,9 +810,7 @@
     .app-download-content {
         text-align: center;
     }
-    #app-screenshot {
-        padding: 40px 0 110px;
-    }
+/* 
     .screenshots-slider .owl-nav .owl-next {
         right: -12px;
         padding: 6px 12px
@@ -854,16 +822,9 @@
         height: 40px;
         font-size: 20px;
         padding: 6px 10px;
-    }
+    } */
     #demo-video {
         padding: 50px 0 80px;
-    }
-    #how-work {
-        padding: 40px 0 0;
-    }
-    .how-work-image img {
-        max-width: 250px;
-        margin: 0 auto;
     }
     #counter {
         padding: 70px 0 10px;
@@ -883,7 +844,6 @@
         margin: 0;
         font-size: 16px;
     }
-    #pricing,
     #team {
         padding: 40px 0 30px;
     }
