@@ -354,6 +354,9 @@
         font-size: 16px;
         line-height: 26px;
     }
+    #faq h2{
+        font-size: 18px;
+    }
     .faq-img {
         float: none;
     }
@@ -612,6 +615,9 @@
     .panel-title > a {
         font-size: 16px;
         line-height: 26px;
+    }
+    #faq h2{
+        font-size: 18px;
     }
     .faq-img {
         float: none;
@@ -873,6 +879,9 @@
     .panel-title > a {
         font-size: 16px;
         line-height: 26px;
+    }
+    #faq h2{
+        font-size: 18px;
     }
     .faq-img {
         float: none;

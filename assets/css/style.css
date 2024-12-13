@@ -639,7 +639,7 @@ nav.navbar.bootsnav {
     display: inline-block;
     background: #ff004f;
     background: #ff004f;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     border: 2px solid #ff004f;
 }
@@ -1058,5 +1058,5 @@ nav.navbar.bootsnav {
 }
 
 .faq-img img {
-    max-width: 350px;
+    transform: rotate(10deg);
 }
