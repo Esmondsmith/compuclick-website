@@ -65,6 +65,20 @@
         });
 
         /*---------------------------------------------------
+            About:- show more text
+        ----------------------------------------------------*/
+        document.querySelector(".read-more-btn").addEventListener("click", function () {
+            const hiddenText = document.querySelector(".hidden-text");
+            if (hiddenText.classList.contains("show-text")) {
+                hiddenText.classList.remove("show-text");
+                this.innerHTML = 'Read More <i class="icofont icofont-double-right"></i>';
+            } else {
+                hiddenText.classList.add("show-text");
+                this.innerHTML = 'Read Less <i class="icofont icofont-double-left"></i>';
+            }
+        });
+
+        /*---------------------------------------------------
             Testimonial Carousel
         ----------------------------------------------------*/
         $('.testimonial-carousel').owlCarousel({

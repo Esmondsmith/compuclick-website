@@ -204,17 +204,6 @@ blockquote {
     background-image: -webkit-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255));
     background-image: linear-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255));
 }
-.gradient-bg-1 {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    background-size: 100% auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(205, 15, 216, 1)), color-stop(51%, rgba(52, 131, 255, 1)), to(rgba(205, 15, 216, 1)));
-    background-image: linear-gradient(to right, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 51%, rgba(205, 15, 216, 1) 100%);
-}
-
-.gradient-bg-1:hover {
-    background-position: right center;
-}
 
 .bg-gray {
     background-color: #f5f5f5
@@ -453,7 +442,7 @@ nav.navbar.bootsnav {
     margin: 0 auto;
 }
 
-.slider-carousel .owl-nav > div {
+/* .slider-carousel .owl-nav > div {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -463,16 +452,16 @@ nav.navbar.bootsnav {
     color: #fff;
     padding: 3px 8px;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
+} */
+/* 
 .slider-carousel .owl-nav > div:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
+} */
+/* 
 .slider-carousel .owl-nav .owl-next {
     left: auto;
     right: 10px
-}
+} */
 
 .slider-carousel .owl-dots {
     position: absolute;
@@ -569,16 +558,25 @@ nav.navbar.bootsnav {
 
 .about-img {
     margin-right: 30px;
+    img{
+        border-radius: 6px;
+    }
 }
-
 .about-content h3 {
     margin: 0 0 20px;
 }
 .about-content span{
-    font-weight: 800;
-    color: #000;
+    font-weight: 900;
+    padding-right: 5px;
 }
-
+.hidden-text {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+.show-text {
+    display: inline;
+}
 .about-us-btn {
     margin: 20px 0 0;
     border-radius: 0px;
@@ -592,16 +590,11 @@ nav.navbar.bootsnav {
 }
 
 /*-------------------------------------------------------------------------------
-    Features
+    Service section styling
 ---------------------------------------------------------------------------------*/
 
 #services {
     padding: 70px 0 85px;
-    /* hr{
-        border-bottom: 2px solid rgb(216, 15, 28);
-        margin: 0;
-        width: 20%;
-    } */
 }
 .service-icon-div{
     transition: background 0.7s, transform 0.7s;
@@ -626,8 +619,11 @@ nav.navbar.bootsnav {
     padding: 90px 0 50px
 }
 
-.why-choose-content h2 {
-    margin: 0 0 30px;
+.why-choose-content{
+
+    hr{
+        margin: 0 0 30px;
+    }
 }
 .why-chose-icon {
     width: 15%;
@@ -715,12 +711,311 @@ nav.navbar.bootsnav {
     margin: 5px 0 0;
 }
 
+
+/*-------------------------------------------------------------------------------
+    Testimonial
+---------------------------------------------------------------------------------*/
+
+#testimonial {
+    padding: 50px 0;
+}
+
+.testimonial-carousel.owl-carousel {
+    background-color: #fff;
+    padding: 0 50px 100px;
+    border-radius: 30px 0;
+}
+
+.client-info h4 {
+    margin: 10px 0 0;
+}
+
+.client-info img {
+    max-width: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 100px;
+    -webkit-box-shadow: 0 0 6px #e6f0fa;
+    box-shadow: 0 0 6px #e6f0fa;
+    border: 1px solid #e6f0fa;
+}
+
+.testimonial-border {
+    background: linear-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255));
+    height: 170px;
+    width: 5px;
+}
+
+.client-comment p {
+    font-style: italic;
+    letter-spacing: 1px
+}
+
+.client-comment i {
+    color: #fac917;
+    padding: 0 2px
+}
+
+.client-comment i.icofont.icofont-quote-right {
+    font-size: 50px;
+    color: #e6f0fa;
+    padding-right: 100px;
+}
+
+.testimonial-carousel .owl-dots {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 60px;
+    width: 100%
+}
+
+.testimonial-carousel .owl-dot {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid #ff004f;
+    margin: 0 4px
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: #ff004f;
+    background: linear-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255));
+    background: -webkit-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255));
+}
+
+
+/*-------------------------------------------------------------------------------
+    Team
+---------------------------------------------------------------------------------*/
+
+#team {
+    padding: 70px 0 100px
+}
+
+.team-single {
+    border-radius: 10px;
+    border: 1px solid #e6f0f1;
+    -webkit-box-shadow: 0 0 10px #e6f0f1;
+    box-shadow: 0 0 10px #e6f0f1;
+}
+
+.team-single:hover .team-social {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible
+}
+
+.team-social {
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    background-color: #ff004f;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden
+}
+
+.team-social ul li {
+    display: inline-block;
+}
+
+.team-social ul li a {
+    display: block;
+    color: #fff;
+    padding: 6px 10px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.team-social ul li a:hover {
+    background-color: #fff;
+    color: #ff004f
+}
+
+.team-member-info {
+    background-color: #fff;
+    padding: 20px 0
+}
+
+
+/*-------------------------------------------------------------------------------
+    Footer
+---------------------------------------------------------------------------------*/
+
+#footer {
+    background: linear-gradient(-45deg, rgba(216, 15, 28, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 20px 0;
+    h5{
+        font-weight: 600;
+    }
+}
+.footer-contact-us i{
+    font-size: 20px;
+}
+.subscribe-form {
+    transition: background 0.5s, transform 0.5s;
+    p{
+        margin-bottom: 0%;
+    }
+    label{
+        color: #fff;
+        margin-top: 20px;
+    }
+    input{
+        margin-bottom: 20px;
+        border-radius: 6px;
+        caret-color: #ff004f;
+        border: none;
+    }
+    a{
+        border-radius: 6px;
+        color: #fff;
+        padding: 10px;
+    }
+}
+.subscribe-btn:hover{
+    color: #fff;
+    font-weight: 800;
+    /* transform: translateY(-8px); */
+}
+.footer-social ul li {
+    display: inline-block;
+}
+.footer-social li a {
+    color: #ff004f;
+    border: 2px solid #ff004f;
+    padding: 3px 6px;
+    font-size: 16px;
+    display: block;
+    border-radius: 6px;
+    margin: 0 2px;
+}
+.footer-social li a:hover {
+    color: #fff;
+    background-color: #ff004f
+}
+
+
+/*-------------------------------------------------------------------------------
+    Back to Top styling
+---------------------------------------------------------------------------------*/
+.click-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.click-to-top > a {
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    padding: 6px 10px;
+    background: rgba(216, 15, 28, 1);
+    background: linear-gradient(-45deg, rgba(216, 15, 28, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(-45deg, rgba(216, 15, 28, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------
+    Contact Page Sytling
+    --------contact form---------
+---------------------------------------------------------------------------------*/
+#contact {
+    padding: 70px 0 70px
+}
+.contact-contents{
+    padding: 30% 0 30%;
+}
+.contact-contents p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 10px
+}
+.contant-quick-call-btn{
+    padding-top: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    transition: background 0.5s, transform 0.5s;
+    a{
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 8px;
+    }
+}
+.contant-quick-call-btn a:hover {
+    /* background:linear-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255)); */
+    background-color: #ff004f;
+    border: none;
+    transform: translateY(-2px);
+}
+.contact-info {
+    padding: 30px 0;
+    margin: 0 0 30px;
+    border-radius: 25px 25px 0 0;
+    border: 1px solid #e6f0fa;
+    background-color: #fff
+}
+
+.contact-info-single {
+    transition: background 0.5s, transform 0.5s;
+    i{
+        font-size: 30px;
+        padding: 8px;
+        border-radius: 10px 0;
+        display: inline-block;
+        margin: 0 0 15px;
+    }
+}
+
+.contact-info-single:hover {
+    transform: translateY(-3px);
+}
+
+.contact-form-content {
+    border-radius: 0 0 25px 25px;
+    padding: 50px;
+    border: 1px solid #e6f0fa;
+    background-color: #fff
+}
+
+.contact-form-content h3 {
+    margin: 0 0 25px;
+}
+
+.contact-form input {
+    height: 50px
+}
+
+.contact-btn button {
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 2px;
+}
+
+#map {
+    width: 100%;
+    height: 420px;
+}
+
+
+
 /*-------------------------------------------------------------------------------
     Faq
 ---------------------------------------------------------------------------------*/
-
 #faq {
-    padding: 70px 0 100px
+    padding: 50px 0 100px
 }
 
 #accordion {
@@ -760,264 +1055,4 @@ nav.navbar.bootsnav {
 
 .faq-img img {
     max-width: 350px;
-}
-
-/*-------------------------------------------------------------------------------
-    Testimonial
----------------------------------------------------------------------------------*/
-
-#testimonial {
-    padding: 70px 0 100px
-}
-
-.testimonial-carousel.owl-carousel {
-    background-color: #fff;
-    padding: 65px 50px 100px;
-    border-radius: 30px 0;
-}
-
-.client-info h4 {
-    margin: 10px 0 0;
-}
-
-.client-info img {
-    max-width: 100px;
-    margin: 0 auto;
-    border-radius: 50%;
-    height: 100px;
-    -webkit-box-shadow: 0 0 6px #e6f0fa;
-    box-shadow: 0 0 6px #e6f0fa;
-    border: 1px solid #e6f0fa;
-}
-
-.testimonial-border {
-    background-color: #e6f0fa;
-    height: 170px;
-    width: 5px;
-}
-
-.client-comment p {
-    font-style: italic;
-    letter-spacing: 1px
-}
-
-.client-comment i {
-    color: #fac917;
-    padding: 0 2px
-}
-
-.client-comment i.icofont.icofont-quote-right {
-    font-size: 50px;
-    color: #e6f0fa;
-    padding-right: 100px;
-}
-
-.testimonial-carousel .owl-dots {
-    position: absolute;
-    text-align: center;
-    left: 0;
-    bottom: 60px;
-    width: 100%
-}
-
-.testimonial-carousel .owl-dot {
-    display: inline-block;
-    height: 14px;
-    width: 14px;
-    border-radius: 50%;
-    border: 2px solid #cd0fd8;
-    margin: 0 4px
-}
-
-.testimonial-carousel .owl-dot.active {
-    background: rgba(52, 131, 255, 1);
-    background: linear-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
-    background: -webkit-gradient(-45deg, rgba(205, 15, 216, 1) 0%, rgba(52, 131, 255, 1) 100%);
-}
-
-
-/*-------------------------------------------------------------------------------
-    Team
----------------------------------------------------------------------------------*/
-
-#team {
-    padding: 70px 0 100px
-}
-
-.team-single {
-    border-radius: 10px;
-    border: 1px solid #e6f0f1;
-    -webkit-box-shadow: 0 0 10px #e6f0f1;
-    box-shadow: 0 0 10px #e6f0f1;
-}
-
-.team-single:hover .team-social {
-    bottom: 0;
-    opacity: 1;
-    visibility: visible
-}
-
-.team-social {
-    position: absolute;
-    left: 0;
-    bottom: -80px;
-    background-color: #cd0fd8;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    opacity: 0;
-    visibility: hidden
-}
-
-.team-social ul li {
-    display: inline-block;
-}
-
-.team-social ul li a {
-    display: block;
-    color: #fff;
-    padding: 6px 10px;
-    border: 2px solid #fff;
-    font-size: 20px;
-    border-radius: 4px;
-}
-
-.team-social ul li a:hover {
-    background-color: #fff;
-    color: #cd0fd8
-}
-
-.team-member-info {
-    background-color: #fff;
-    padding: 20px 0
-}
-
-/*-------------------------------------------------------------------------------
-    Contact
----------------------------------------------------------------------------------*/
-
-#contact {
-    padding: 70px 0 100px
-}
-
-.contact-info {
-    padding: 30px 0 20px;
-    margin: 0 0 30px;
-    border-radius: 25px 25px 0 0;
-    border: 1px solid #e6f0fa;
-    background-color: #fff
-}
-
-.contact-info-single i {
-    font-size: 20px;
-    padding: 8px 12px;
-    border-radius: 10px 0;
-    display: inline-block;
-    margin: 0 0 15px;
-}
-
-.contact-info-single:hover i {
-    background-position: right center;
-}
-
-.contact-form-content {
-    border-radius: 0 0 25px 25px;
-    padding: 50px;
-    border: 1px solid #e6f0fa;
-    background-color: #fff
-}
-
-.contact-form-content h3 {
-    margin: 0 0 25px;
-}
-
-.contact-form input {
-    height: 50px
-}
-
-.contact-btn button {
-    border: 0;
-    padding: 12px 30px;
-    border-radius: 2px;
-}
-
-#map {
-    width: 100%;
-    height: 420px;
-}
-
-/*-------------------------------------------------------------------------------
-    Footer
----------------------------------------------------------------------------------*/
-
-#footer {
-    background: linear-gradient(-45deg, rgba(216, 15, 28, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    padding: 20px 0;
-    h5{
-        font-weight: 600;
-    }
-}
-
-.footer-social ul li {
-    display: inline-block;
-}
-.subscribe-form {
-    transition: background 0.5s, transform 0.5s;
-    p{
-        margin-bottom: 0%;
-    }
-    input{
-        margin-bottom: 20px;
-        border-radius: 6px;
-        caret-color: #ff004f;
-        border: none;
-    }
-    a{
-        border-radius: 6px;
-        color: #fff;
-        padding: 10px;
-    }
-}
-.subscribe-btn:hover{
-    color: #fff;
-    font-weight: 800;
-    /* transform: translateY(-8px); */
-}
-
-.footer-social li a {
-    color: #ff004f;
-    border: 2px solid #ff004f;
-    padding: 3px 6px;
-    font-size: 16px;
-    display: block;
-    border-radius: 6px;
-    margin: 0 2px;
-}
-
-.footer-social li a:hover {
-    color: #fff;
-    background-color: #ff004f
-}
-
-
-/*-------------------------------------------------------------------------------
-    Back to Top styling
----------------------------------------------------------------------------------*/
-.click-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 15px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-.click-to-top > a {
-    color: #fff;
-    display: block;
-    font-size: 22px;
-    padding: 6px 10px;
-    background: rgba(216, 15, 28, 1);
-    background: linear-gradient(-45deg, rgba(216, 15, 28, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    background: -webkit-gradient(-45deg, rgba(216, 15, 28, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
