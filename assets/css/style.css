@@ -1,43 +1,3 @@
-/*-----------------------------------------------------------------
-
-Project     :   Zeeper App Landing Page
-Author      :   thememeta
-Author URI  :   https://themeforest.net/user/thememeta
-
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-
-[Table of contents]
-
-Default CSS
-Preloader
-Header
-Banner
-Section Heading
-About
-services
-Why Choose Us
-App Screenshots
-Demo Video
-How It Work
-Counter
-Faq
-Testimonial
-Download
-Team
-Newsletter
-Latest Blog
-Contact
-Footer
-Blog Page
-Blog Single Page
-
----------------------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------------------------
-    Default CSS
----------------------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
 
@@ -178,14 +138,8 @@ blockquote {
 }
 
 .color-base {
-    /* color: #cd0fd8!important */
     color: #ff004f!important;
 }
-
-.color-base2 {
-    color: #8744EA!important
-}
-
 .form-control {
     border: 1px solid #e6f1f1;
     -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset;
@@ -264,7 +218,7 @@ blockquote {
 .preloader {
     background: rgba(52, 131, 255, 1);
     background: linear-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255));
-    background: -webkit-gradient(-45deg, rgb(216, 15, 28) 0%, rgba(52, 131, 255, 1) 100%);
+    background: -webkit-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255));
     height: 100%;
     left: 0;
     position: fixed;
@@ -436,28 +390,6 @@ nav.navbar.bootsnav {
     height: 500px;
     margin: 0 auto;
 }
-
-/* .slider-carousel .owl-nav > div {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    color: #fff;
-    padding: 3px 8px;
-    background-color: rgba(0, 0, 0, 0.5);
-} */
-/* 
-.slider-carousel .owl-nav > div:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-} */
-/* 
-.slider-carousel .owl-nav .owl-next {
-    left: auto;
-    right: 10px
-} */
-
 .slider-carousel .owl-dots {
     position: absolute;
     left: 0;
@@ -540,9 +472,6 @@ nav.navbar.bootsnav {
     border: 1px solid #ff004f;
     padding: 6px;
 }
-
-
-
 
 /*-------------------------------------------------------------------------------
     Section Heading
@@ -853,14 +782,22 @@ nav.navbar.bootsnav {
 ---------------------------------------------------------------------------------*/
 
 #footer {
-    background: linear-gradient(-45deg, rgba(216, 15, 28, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(0, 0, 0, 0.8));
     padding: 20px 0;
-    h5{
+    h5,p,a{
         font-weight: 600;
+        color: #fff;
     }
 }
 .footer-contact-us i{
     font-size: 20px;
+}
+.footer-contact-us ul li{
+    color: #fff;
+}
+.footer-links ul li a:hover{
+   background-color: transparent;
+   border: 1px solid #fff;
 }
 .subscribe-form {
     transition: background 0.5s, transform 0.5s;
@@ -886,14 +823,13 @@ nav.navbar.bootsnav {
 .subscribe-btn:hover{
     color: #fff;
     font-weight: 800;
-    /* transform: translateY(-8px); */
 }
 .footer-social ul li {
     display: inline-block;
 }
 .footer-social li a {
     color: #ff004f;
-    border: 2px solid #ff004f;
+    border: 2px solid #fff;
     padding: 3px 6px;
     font-size: 16px;
     display: block;
@@ -902,7 +838,8 @@ nav.navbar.bootsnav {
 }
 .footer-social li a:hover {
     color: #fff;
-    background-color: #ff004f
+    background-color: #ff004f;
+    border-color: #ff004f;
 }
 
 
@@ -925,10 +862,6 @@ nav.navbar.bootsnav {
     background: linear-gradient(-45deg, rgba(216, 15, 28, 1) 0%, rgba(255, 255, 255, 1) 100%);
     background: -webkit-gradient(-45deg, rgba(216, 15, 28, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
-
-
-
-
 
 /*-------------------------------------------------------------------------------
     Contact Page Sytling
@@ -958,7 +891,6 @@ nav.navbar.bootsnav {
     }
 }
 .contant-quick-call-btn a:hover {
-    /* background:linear-gradient(-45deg, rgb(216, 15, 28) 0%, rgb(255, 255, 255)); */
     background-color: #ff004f;
     border: none;
     transform: translateY(-2px);
@@ -1011,7 +943,6 @@ nav.navbar.bootsnav {
     width: 100%;
     height: 420px;
 }
-
 
 
 /*-------------------------------------------------------------------------------

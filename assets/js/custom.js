@@ -149,5 +149,9 @@
 
     new WOW().init();
 
+    
+    //Dynamic year 
+    const currentYear = new Date().getFullYear();
+    document.getElementById('footerYear').textContent = currentYear;
 
 }(jQuery));

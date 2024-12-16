@@ -138,7 +138,7 @@
             position: new google.maps.LatLng(6.6023276, 3.3002424),
             map: map,
             icon: {
-                url: 'assets/images/map-marker.png',
+                url: 'assets/images/location.png',
             },
             animation: google.maps.Animation.BOUNCE
         });
